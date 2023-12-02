@@ -258,8 +258,6 @@ nav ul li a:hover {
     width: auto;
     padding: 10px;
     border-radius: 50px;
-    /* scale: 0.8; */
-
 }
 
 .about-right{
@@ -268,7 +266,7 @@ nav ul li a:hover {
 }
 
 .about-right ul{
-    margin: 10px;
+    margin: 20px 0;
     list-style-type: none;
 }
 
