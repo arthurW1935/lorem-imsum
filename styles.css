@@ -130,6 +130,93 @@ nav ul li a:hover {
     display: block;
 }
 
+
+.hamburger{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    display: none;
+}
+
+.menu-toggle {
+    overflow: hidden;
+    display: hidden;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #013078;
+    z-index: 1000;
+  }
+
+  @media screen and (min-width: 850px){
+    .hamburger, .menu-toggle{
+        display: none !important;
+    }
+}
+
+  @media screen and (max-width: 850px) {
+        .hamburger{
+          display: block;
+        }
+        .menu-toggle{
+            display: none;
+        }
+        header{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        nav{
+            width: 100%;
+        }
+        nav h1{
+            font-size: 1.2rem;
+        }
+        
+        .menu-toggle span{
+            display: block;
+            /* width: 30px; */
+            /* height: 3px; */
+            margin: 5px;
+            border-bottom: 1px solid white;
+            /* background-color: white; */
+            transition: all 0.3s ease-in-out;
+        }
+        .menu-toggle span a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        
+        nav ul {
+            display: none; /* Hide the nav links by default for smaller screens */
+            /* flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 70px; /* Adjust the top position to avoid overlapping with the header */
+            left: 0;
+            width: 100%;
+            background-color: #333; 
+    }
+    
+    nav ul.active {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 840px){
+    .hamburger, .menu-toggle{
+        display: none;
+    }
+}
+
 #welcome {
     background-color: #013078;
     color: white;
@@ -140,11 +227,11 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
+
 #welcome aside{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
 }
 .intro{
@@ -170,7 +257,7 @@ nav ul li a:hover {
 }
 
 #welcome h1 {
-    font-size: 3.5em;
+    font-size: max(30px,5vw);
 }
 
 #welcome button {
@@ -196,6 +283,22 @@ nav ul li a:hover {
     outline: none;
     border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+    .preheader{
+        display: none;
+    }
+    #welcome {
+      flex-direction: column;
+      padding: 0 0 100px 0;
+    }
+
+    .intro{
+        padding: 20px;
+    }
+
+  }
+
 
 #card-container{
     display: flex;
@@ -224,6 +327,12 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .about-content{
+      flex-direction: column;
+    }
+  }
 
 .line{
     width: 80px;
@@ -282,6 +391,7 @@ nav ul li a:hover {
     /* scale: 0.8; */
 }
 
+
 .stats{
 
 }
@@ -294,10 +404,20 @@ nav ul li a:hover {
     justify-content: space-around;
 }
 
+
+
 .clients img{
     width: 180px;
 }
 
+@media (max-width: 768px) {
+    .clients{
+      flex-direction: column;
+    }
+    .clients img{
+        margin: 20px 0;
+    }
+  }
 
 .numbers{
     display: flex;
@@ -310,6 +430,11 @@ nav ul li a:hover {
     
 }
 
+@media (max-width: 768px) {
+    .numbers-left img{
+        width: 90vw;
+    }
+}
 .numbers-right{
     display: flex;
     flex-direction: column;
@@ -396,6 +521,13 @@ nav ul li a:hover {
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    .call-to-action-video .content-text h2{
+      font-size: 2rem;
+    }
+  }
+
+
 .our-services{
     padding: 4rem 4vw;
     display: flex;
@@ -451,6 +583,13 @@ nav ul li a:hover {
     background-color: #f3f3f3;
 }
 
+.services-card .image-container i{
+    height: 60px;
+    width: 60px;
+    padding: 40px 20px;
+}
+
+
 .card-title-container .services-title{
     font-size: 1.5rem;
     font-weight: 700;
@@ -496,6 +635,8 @@ nav ul li a:hover {
 
 
 .testimonials-card-container{
+    width: 100%;
+    margin: 30px 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -510,14 +651,24 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: left;
     gap: 1rem;
-    box-shadow: #333 solid 1px;
+    /* give heavy shadow  */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 .testimonial-card .image-container{
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
     border-radius: 100%;
-    background-color: #f3f3f3;
+    background: url(images/blog/comments-1.jpg) no-repeat center center;
+    margin-right: 10px;
+
 }
+
+#testimonials .card-title-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 .card-title-container .testimonial-title{
     font-size: 1.5rem;
@@ -560,6 +711,17 @@ nav ul li a:hover {
     max-width: 100vw;
     flex-direction: column;
     padding: 0;
+}
+
+.contact-us .content .title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us .content .title-div h1{
+    font-size: 3rem;
 }
 
 .form-div{
