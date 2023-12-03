@@ -33,18 +33,17 @@
             </div>        
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
                 <li class="dropdown">
-                    <a href="#">Drop Down</a>
-                    <div class="dropdown-content">
-                        <a href="#">Contact</a>
-                        <a href="#">Get Started</a>
-                    </div>
+                  <a href="#">Drop Down</a>
+                  <div class="dropdown-content">
+                    <a href="#">Get Started</a>
+                  </div>
                 </li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <button class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars fa-2xl"></i></button>
@@ -52,12 +51,11 @@
       </header>
       <section class="menu-toggle" id="mobile-menu">
         <span><a href="#" onclick=toggleMenu()>Home</a></span>
-        <span><a href="#" onclick=toggleMenu()>About</a></span>
-        <span><a href="#" onclick=toggleMenu()>Services</a></span>
-        <span><a href="#" onclick=toggleMenu()>Portfolio</a></span>
-        <span><a href="#" onclick=toggleMenu()>Team</a></span>
-        <span><a href="#" onclick=toggleMenu()>Blog</a></span>
-        <span><a href="#" onclick=toggleMenu()>Contact</a></span>
+        <span><a href="#about" onclick=toggleMenu()>About</a></span>
+        <span><a href="#services" onclick=toggleMenu()>Services</a></span>
+        <span><a href="#portfolio" onclick=toggleMenu()>Portfolio</a></span>
+        <span><a href="#team" onclick=toggleMenu()>Team</a></span>
+        <span><a href="#contact" onclick=toggleMenu()>Contact</a></span>
       </section>
     <main>
         <section id="welcome">
@@ -152,7 +150,8 @@
                 </section>
             </section>
         </section>
-        <section class="call-to-action-video">
+
+        <section id="call-to-action" class="call-to-action-video">
             <div class="content">
                 <img src="images/cta-bg.jpg" alt="emptyroad imaeg with tress on the side"/>
                 <div class="content-text">
@@ -164,6 +163,7 @@
                 </div>
             </div>    
         </section>
+
         <section id="services" class="our-services">
             <div class="content">
               <div class="title-div">
@@ -527,7 +527,7 @@
           </div>
         </section>
 
-        <section class="Pricing-Plan">
+        <section id="pricing-plan" class="Pricing-Plan">
           <div class="Pricing-Plan-content">
             <h1>Pricing Plan</h1>
             <p class="Pricing-Plan-sub-heading">
@@ -693,7 +693,7 @@
           </div>
         </section>
 
-        <section class="contact-us">
+        <section id="contact" class="contact-us">
             <div class="content">
               <div class="title-div">
                 <h1 class="about-us-title">Contact</h1>
