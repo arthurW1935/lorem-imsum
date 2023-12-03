@@ -756,9 +756,6 @@ nav ul li a:hover {
 }
 
 .portfolio-card-container{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -771,8 +768,16 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 1rem;
+
 }
+
+.portfolio-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+
 .portfolio-card .img-container{
     width: 100%;
     height: 250px;
@@ -785,11 +790,251 @@ nav ul li a:hover {
     background-repeat: no-repeat;
 }
 
-
-
 .portfolio-card .caption{
     padding: 10px;
 }
+
+
+.Team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px 0px 80px;
+}
+.Team h1{
+    font-size: 44px;
+}
+.Team-sub-heading{
+    color: #5f5f5f;
+    padding-bottom: 30px;
+}
+.Team-content{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+.Team-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+.Team-card{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Team-card-job{
+    color: #8e8e8e;
+}
+.Team-card-image{
+    width: 270px; 
+    height: 270px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.Team-card-image-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; 
+}
+.team-social{
+    display: flex;
+    margin-top: 20px;
+    justify-content: start;
+    gap: 2.5rem;
+    align-items: center;
+}
+.team-social-icon{
+    padding: 8px;
+    border: 1px solid #8e8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.Pricing-Plan{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+}
+.Pricing-Plan h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+.Pricing-Plan-sub-heading{
+    color: #5f5f5f;
+    padding-bottom: 30px;
+}
+.Pricing-Plan-content{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.Pricing-Plan-box{
+    display: flex;
+    padding-top: 120px;
+}
+.Pricing-Plan-card {
+    height: 650px;
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    padding: 45px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Pricing-Plan-card-img1{
+    background: url("images/pricing-img/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+}
+.Pricing-Plan-card-img2{
+    background: url("images/pricing-img/2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+}
+.Pricing-Plan-card-img3{
+    background: url("images/pricing-img/3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+}
+.Pricing-Plan-card .top-Pricing-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+.Pricing-Plan-card .top-Pricing-card .l1{
+    font-size: 22px;
+    font-weight: 550;
+    color: #555555;
+}
+.Pricing-Plan-card .top-Pricing-card .l3 {
+    display: flex;
+    align-items: end;
+}
+.Pricing-Plan-card .top-Pricing-card .l3 .num{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fb5c3e;
+    display: flex;
+    align-items: start;
+}
+.Pricing-Plan-card .top-Pricing-card .l3 .num .dollar{
+    margin-top: 4px;
+    padding: 2px;
+}
+.Pricing-Plan-card .top-Pricing-card .l3 .num .money{
+    font-size: 42px;
+    font-weight: 700;
+    color: #fb5c3e;
+}
+.Pricing-Plan-card .top-Pricing-card .l3 .month {
+    font-size: 1.2rem;
+    color: #8e8e8e;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.Pricing-Plan-card .bottom-Pricing-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 40px;
+}
+.Pricing-Plan-card .bottom-Pricing-plan .line-1{
+    display: flex;
+    align-items: center;
+    color: #6a6a6a;
+    font-weight: 370;
+    font-size: 1.1rem;
+}
+.Pricing-Plan-card .bottom-Pricing-plan .line-cross{
+    display: flex;
+    align-items: center;
+    color: #b7b7b7;
+    font-weight: 370;
+    font-size: 1.1rem;
+}
+.Pricing-Plan-card .bottom-button{
+    padding: 10px 44px;
+    margin: 2rem 0;
+    border-radius: 40px;
+    border: 0.5px solid #3660a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Pricing-Plan-card .bottom-button span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #013783;
+}
+.Pricing-Plan-box .middle-card{
+    transform: scale(1.2); 
+    border: 3px solid #3660a1;
+    margin: 0 30px;
+}
+
+@media (max-width: 1300px) {
+    .Pricing-Plan-box .middle-card{
+        transform: scale(1) !important; 
+        margin: 20px 0;
+    }
+    .Pricing-Plan-box{
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .Pricing-Plan-box .middle-card{
+        transform: scale(1) !important; 
+        margin: 20px 0;
+    }
+    .Pricing-Plan-card{
+        width: 300px;
+        height: 800px;
+    }
+}
+
 
 
 .contact-us .content{
@@ -824,7 +1069,6 @@ nav ul li a:hover {
 .contact-us .content .title-div{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     text-align: center;
     margin-bottom: 3rem;
 }
