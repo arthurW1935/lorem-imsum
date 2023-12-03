@@ -149,6 +149,7 @@ nav ul li a:hover {
     justify-content: center;
     background-color: #013078;
     z-index: 1000;
+    padding: 20px;
   }
 
   @media screen and (min-width: 850px){
@@ -242,7 +243,6 @@ nav ul li a:hover {
     width: 100%;
     margin-top: 20px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -352,6 +352,12 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.about-header p{
+    text-align: center;
+    margin: 10px;
+}
+
 .about-content{
     display: flex;
 }
@@ -386,7 +392,6 @@ nav ul li a:hover {
     width: auto;
     padding: 10px;
     border-radius: 50px;
-    /* scale: 0.8; */
 }
 
 
@@ -495,7 +500,6 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,6 +512,12 @@ nav ul li a:hover {
     font-size: 3rem;
     margin-bottom: 20px;
 }
+
+.call-to-action-video .content-text p{
+    padding: 5px;
+    text-align: center;
+}
+
 
 .call-to-action-video .content-text button{
     margin-top: 50px;
@@ -605,8 +615,6 @@ nav ul li a:hover {
 
 }
 .services-card button:hover{
-    /* background-color: var(--secondary-color); */
-    /* color: white; */
     padding-left: 2rem;
 }
 
@@ -625,12 +633,15 @@ nav ul li a:hover {
     justify-content: center;
 }
 
+.testimonials-header p{
+    text-align: center;
+    margin: 10px;
+}
+
 .testimonials-title{
     font-size: 3rem;
     margin-bottom: 20px;
 }
-
-
 
 .testimonials-card-container{
     width: 100%;
@@ -644,7 +655,8 @@ nav ul li a:hover {
     width: max(250px,25vw);
     background-color: white;
     border-radius: 20px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -658,7 +670,6 @@ nav ul li a:hover {
     border-radius: 100%;
     background: url(images/blog/comments-1.jpg) no-repeat center center;
     margin-right: 10px;
-
 }
 
 #testimonials .card-title-container{
@@ -667,32 +678,10 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-
 .card-title-container .testimonial-title{
     font-size: 1.5rem;
     font-weight: 700;
 }
-
-.testimonial-card button{
-    background-color: transparent;
-    padding: 1rem 0rem;
-    text-align: left;
-    max-width: 200px;
-    color: #013078;
-    font-size: 18px;
-    border: none;
-    transition: all 0.3s ease;
-
-}
-.testimonial-card button:hover{
-    /* background-color: var(--secondary-color); */
-    /* color: white; */
-    padding-left: 2rem;
-}
-
-
-
-
 
 .contact-us{
     width: 100%;
@@ -728,8 +717,7 @@ nav ul li a:hover {
     display: flex;
     border-radius: 30px;
     background-color: white;
-    width: 100%;
-    /* padding: 2rem 3rem; */
+    width: fit-content;
     gap: 4rem;
 }
 
@@ -777,6 +765,12 @@ gap: 1rem;
     font-weight: 600;
 }
 
+.form-div{
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #013078;
+}
+
 input{
     width: 100%;
     padding: 1rem 2rem;
@@ -802,7 +796,7 @@ form div{
 }
 textarea{
     padding: 1rem 2rem;
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 
 form div{
@@ -817,17 +811,38 @@ input[type="submit"]{
     width: fit-content;
     color: white;
     border: none;
-    padding: 1rem 2rem;
     border-radius: 30px;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
-input{
+#name{
     color: black;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
 }
 
 input::placeholder {
     color: #999; /* Replace with your desired color */
+}
+
+@media (max-width: 1000px){
+    .contact-us .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-div{
+        flex-direction: column;
+        width: 90% !important;
+    }
+    .contact-icon-container{
+        width: 100%;
+    }
+
+    form{
+        padding-top: 0%;
+    }
+    
 }
