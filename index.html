@@ -27,10 +27,10 @@
         </div>
     </section>
     <header>
-        <nav>
+      <nav>
             <div class="logo">
                 <h1>LOREM_IMSUM</h1>
-            </div>
+            </div>        
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -46,8 +46,19 @@
                     </div>
                 </li>
             </ul>
+
+            <button class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars fa-2xl"></i></button>
         </nav>
-    </header>
+      </header>
+      <section class="menu-toggle" id="mobile-menu">
+        <span><a href="#" onclick=toggleMenu()>Home</a></span>
+        <span><a href="#" onclick=toggleMenu()>About</a></span>
+        <span><a href="#" onclick=toggleMenu()>Services</a></span>
+        <span><a href="#" onclick=toggleMenu()>Portfolio</a></span>
+        <span><a href="#" onclick=toggleMenu()>Team</a></span>
+        <span><a href="#" onclick=toggleMenu()>Blog</a></span>
+        <span><a href="#" onclick=toggleMenu()>Contact</a></span>
+      </section>
     <main>
         <section id="welcome">
             <aside class="intro">
@@ -160,14 +171,13 @@
                 <div class="line"></div>
                 <span
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  dolores eum aliquid temporibus facere.</span
-                >
+                  dolores eum aliquid temporibus facere.</span>
               </div>
       
               <div class="our-services-card-container">
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -184,7 +194,7 @@
       
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -200,7 +210,7 @@
                 </div>
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -216,7 +226,7 @@
                 </div>
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -232,7 +242,7 @@
                 </div>
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -248,7 +258,7 @@
                 </div>
                 <div class="services-card">
                   <div class="image-container">
-                    <img />
+                    <i class="fa-solid fa-tower-broadcast fa-2xl"></i>
                   </div>
                   <div class="card-title-container">
                     <span class="services-title">Nesuiment Mate</span>
@@ -270,56 +280,82 @@
             <div class="testimonials-header">
                 <h2 class="testimonials-title">Testimonials</h2>
                 <div class="line"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
             </div>
             <div class="testimonials-card-container">
                 <div class="testimonial-card">
+                  <div class="card-title-container">
                     <div class="image-container">
-                      <img />
                     </div>
-                    <div class="card-title-container">
+                    <div>
                       <span class="testimonial-title">Nesuiment Mate</span>
+                      <div class="stars">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
                     </div>
+                  </div>
                     <p>
+                      <i class="fa-solid fa-quote-left fa-xl"></i>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
                       temporibus porro. Facilis, hic esse eaque maxime in ducimus omnis
                       iste dolorem sapiente magni quo ipsam error quibusdam, nemo, quia
                       alias!
+                      <i class="fa-solid fa-quote-right fa-xl"></i>
                     </p>
-        
-                    <button>Read More →</button>
                 </div>
                 <div class="testimonial-card">
+                  <div class="card-title-container">
                     <div class="image-container">
-                      <img />
                     </div>
-                    <div class="card-title-container">
+                    <div>
                       <span class="testimonial-title">Nesuiment Mate</span>
+                      <div class="stars">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
                     </div>
+                  </div>
                     <p>
+                      <i class="fa-solid fa-quote-left fa-xl"></i>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
                       temporibus porro. Facilis, hic esse eaque maxime in ducimus omnis
                       iste dolorem sapiente magni quo ipsam error quibusdam, nemo, quia
                       alias!
+                      <i class="fa-solid fa-quote-right fa-xl"></i>
                     </p>
-        
-                    <button>Read More →</button>
                 </div>
                 <div class="testimonial-card">
+
+                  <div class="card-title-container">
                     <div class="image-container">
-                      <img />
                     </div>
-                    <div class="card-title-container">
+                    <div>
                       <span class="testimonial-title">Nesuiment Mate</span>
+                      <div class="stars">
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                        <i class="fa-solid fa-star" style="color: gold;"></i>
+                      </div>
                     </div>
+                  </div>
                     <p>
+                      <i class="fa-solid fa-quote-left fa-xl"></i>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
                       temporibus porro. Facilis, hic esse eaque maxime in ducimus omnis
                       iste dolorem sapiente magni quo ipsam error quibusdam, nemo, quia
                       alias!
+                      <i class="fa-solid fa-quote-right fa-xl"></i>
                     </p>
-        
-                    <button>Read More →</button>
                 </div>
             </div>
         </section>
@@ -327,7 +363,7 @@
         <section class="contact-us">
             <div class="content">
               <div class="title-div">
-                <h3 class="about-us-title">Contact</h3>
+                <h1 class="about-us-title">Contact</h1>
                 <div class="line"></div>
                 <span
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
@@ -338,7 +374,7 @@
               <div class="form-div">
                 <div class="contact-icon-container">
                   <div class="contact-item">
-                    <div class="icon"></div>
+                    <div class=""><i class="fa-solid fa-location-dot fa-2xl" style="color: white;"></i></div>
                     <div class="contact-us-item-text">
                       <span class="title-contact">Location:</span>
                       <span class="opacity-8"
@@ -347,21 +383,21 @@
                     </div>
                   </div>
                   <div class="contact-item">
-                    <div class="icon"></div>
+                    <div class=""><i class="fa-regular fa-envelope fa-2xl" style="color: white;"></i></div>
                     <div class="contact-us-item-text">
                       <span class="title-contact">Email:</span>
                       <span class="opacity-8">info@example.com</span>
                     </div>
                   </div>
                   <div class="contact-item">
-                    <div class="icon"></div>
+                    <div class=""><i class="fa-solid fa-phone fa-2xl" style="color: white;"></i></div>
                     <div class="contact-us-item-text">
                       <span class="title-contact">Call:</span>
                       <span class="opacity-8">+1 5589 55488 55</span>
                     </div>
                   </div>
                   <div class="contact-item">
-                    <div class="icon"></div>
+                    <div class=""><i class="fa-solid fa-clock fa-2xl" style="color: white;"></i></div>
                     <div class="contact-us-item-text">
                       <span class="title-contact">Open Hours:</span>
                       <span class="opacity-8">Mon-Sat: 11AM - 23PM</span>
@@ -412,6 +448,11 @@
         </section>
 
     </main>
-
+    <script>
+      function toggleMenu() {
+        var menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.style.display = menuToggle.style.display === 'none' ? 'flex' : 'none';
+      }
+    </script>
 </body>
 </html>
