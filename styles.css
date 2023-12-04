@@ -756,6 +756,7 @@ nav ul li a:hover {
 }
 
 .portfolio-card-container{
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
